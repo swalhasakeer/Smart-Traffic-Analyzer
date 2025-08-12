@@ -121,3 +121,8 @@ http://127.0.0.1:5000/
 
 - CSV reports include speed data per vehicle ID with timestamps.
 
+----
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit issues, fork the repo and send pull requests.
