@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🚦 Smart Traffic Analyzer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f8fc;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 80px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🚦 Smart Traffic Analyzer</h1>
+    <p class="text-muted">Upload a traffic video or image to analyze vehicles, red light violations, and wrong-way driving.</p>
+    
+    <form action="/analyze" method="POST" enctype="multipart/form-data">
+        <div class="form-group mb-3">
+            <label for="file" class="form-label">📤 Choose File (Image/Video)</label>
+            <input type="file" class="form-control" name="file" id="file" required accept="image/*,video/*">
+        </div>
+        <div class="form-group mb-4">
+            <label class="form-label">Select Type:</label><br>
+            <div class="form-check form-check-inline">
+                <input type="radio" id="image" name="option" value="image" class="form-check-input" checked>
+                <label for="image" class="form-check-label">🖼️ Image</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" id="video" name="option" value="video" class="form-check-input">
+                <label for="video" class="form-check-label">🎥 Video</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">🚀 Analyze</button>
+    </form>
+
+    <div class="footer">
+        <p>&copy; Smart Traffic Analyzer | Created By Swalha Sakeer</p>
+    </div>
+</div>
+</body>
+</html>
