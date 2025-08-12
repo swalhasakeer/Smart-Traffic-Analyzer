@@ -52,7 +52,7 @@ git clone https://github.com/YOUR-USERNAME/Smart-Traffic-Analyzer.git
 cd Smart-Traffic-Analyzer
 ```
 
-## 2️⃣ Create & activate a virtual environment
+### 2️⃣ Create & activate a virtual environment
 
 ```bash
 python -m venv venv
@@ -62,13 +62,13 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-## 3️⃣ Install dependencies
+### 3️⃣ Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## ▶️ Running the App
+### ▶️ Running the App
 
 1. Place YOLO model weights (.pt files) in the project root.
 
